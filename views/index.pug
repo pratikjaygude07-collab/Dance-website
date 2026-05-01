@@ -1,0 +1,154 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Dance Portfolio - Professional Dancer
+        link(rel="stylesheet" href="/static/style.css")
+    body
+        // Navigation
+        nav.navbar
+            .container
+                .logo DanceFlow
+                ul.nav-links
+                    li
+                        a(href="#home") Home
+                    li
+                        a(href="#about") About
+                    li
+                        a(href="#classes") Classes
+                    li
+                        a(href="#gallery") Gallery
+                    li
+                        a(href="#contact") Contact
+
+        // Hero Section
+        section#home.hero
+            .hero-content
+                h1 Welcome to DanceFlow
+                p Explore the Art of Dance with Professional Instruction
+                button.cta-btn Get Started
+
+        // About Section
+        section#about.about
+            .container
+                h2 About Me
+                .about-content
+                    .about-text
+                        p Hi! I'm a passionate dancer with 10+ years of experience in contemporary, hip-hop, and classical dance forms. My mission is to help students discover their love for dance and build confidence through movement.
+                        p I believe dance is more than just steps—it's a form of self-expression, fitness, and joy. Whether you're a beginner or advanced dancer, I'm here to guide you on your dance journey.
+                    .about-stats
+                        .stat
+                            h3 10+
+                            p Years Experience
+                        .stat
+                            h3 500+
+                            p Students Trained
+                        .stat
+                            h3 20+
+                            p Styles Mastered
+
+        // Classes Section
+        section#classes.classes
+            .container
+                h2 My Classes
+                .classes-grid
+                    .class-card
+                        .class-icon 🎭
+                        h3 Contemporary
+                        p Master fluid, expressive movements with contemporary dance techniques.
+                        p.price $50/month
+                    .class-card
+                        .class-icon 🎤
+                        h3 Hip-Hop
+                        p Learn cool moves and urban dance styles with modern beats.
+                        p.price $50/month
+                    .class-card
+                        .class-icon 👯
+                        h3 Classical
+                        p Explore the elegance and discipline of classical dance forms.
+                        p.price $60/month
+                    .class-card
+                        .class-icon ✨
+                        h3 Freestyle
+                        p Express yourself with no limits in this creative dance class.
+                        p.price $40/month
+
+        // Gallery Section
+        section#gallery.gallery
+            .container
+                h2 Gallery & Videos                cd "d:\Project 2-Dance Website"
+                git init
+                git add .
+                git commit -m "Initial commit"
+                git branch -M main
+                git remote add origin https://github.com/your-username/dance-website.git
+                git push -u origin main
+                .gallery-grid
+                    .gallery-item
+                        img(src="/static/dance1.svg" alt="Contemporary Dance Performance")
+                        .overlay
+                            p Performance
+                    .gallery-item
+                        img(src="/static/dance2.svg" alt="Ballet Training Session")
+                        .overlay
+                            p Training
+                    .gallery-item
+                        img(src="/static/dance3.svg" alt="Hip Hop Dance Studio")
+                        .overlay
+                            p Studio
+                    .gallery-item
+                        img(src="/static/dance4.svg" alt="Professional Dance Stage")
+                        .overlay
+                            p Performance
+                    .gallery-item
+                        img(src="/static/dance5.svg" alt="Contemporary Dance Workshop")
+                        .overlay
+                            p Workshop
+                    .gallery-item
+                        img(src="/static/dance6.svg" alt="Dance Event Performance")
+                        .overlay
+                            p Event
+
+        // Contact Section
+        section#contact.contact
+            .container
+                h2 Get In Touch
+                .contact-content
+                    .contact-info
+                        h3 Contact Information
+                        p.contact-item
+                            strong 📍 Address: 
+                            | 123 Dance Street, City, Country
+                        p.contact-item
+                            strong 📞 Phone: 
+                            | +1 (555) 123-4567
+                        p.contact-item
+                            strong 📧 Email: 
+                            | info@danceflow.com
+                        p.social
+                            strong Follow Us:
+                            a(href="#") Facebook
+                            | | 
+                            a(href="#") Instagram
+                            | | 
+                            a(href="#") Twitter
+                    .contact-form
+                        form
+                            .form-group
+                                label(for="name") Name
+                                input#name(type="text" placeholder="Your Name" required)
+                            .form-group
+                                label(for="email") Email
+                                input#email(type="email" placeholder="Your Email" required)
+                            .form-group
+                                label(for="message") Message
+                                textarea#message(placeholder="Your Message" rows="5" required)
+                            button.submit-btn Send Message
+
+        // Footer
+        footer.footer
+            .container
+                p &copy; 2026 DanceFlow. All rights reserved.
+                | | Made with ❤️ by a passionate dancer     
+
