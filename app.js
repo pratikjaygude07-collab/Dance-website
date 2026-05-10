@@ -1,13 +1,13 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const port = 80;
+const port = 3000;
 
 
 
 // EXPRESS SPECIFIC STUFF
 app.use('/static', express.static('static')) // For serving static files
-app.use(express.urlencoded())
+app.use(express.urlencoded({ extended: true }))
 
 // PUG SPECIFIC STUFF
 app.set('view engine', 'pug') // Set the template engine as pug
@@ -16,7 +16,7 @@ app.set('views', path.join(__dirname, 'views')) // Set the views directory
 // ENDPOINTS
 app.get('/', (req, res)=>{
     const params = {}
-    res.status(200).render('index.pug', params);
+    res.status(200).render('index', params);
 })
 
 // START THE SERVER
