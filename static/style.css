@@ -613,3 +613,13 @@ body {
     height: 100px;
     background-color: black;
 }
+
+   .form-success {
+       background: #e6f9ee;
+       color: #146c43;
+       border: 1px solid #a3e4bf;
+       border-radius: 8px;
+       padding: 12px 16px;
+       margin-bottom: 16px;
+       font-weight: 600;
+   }

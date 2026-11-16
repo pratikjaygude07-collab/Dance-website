@@ -27,7 +27,7 @@ html(lang="en")
             .hero-content
                 h1 Welcome to DanceFlow
                 p Explore the Art of Dance with Professional Instruction
-                button.cta-btn Get Started
+                a.cta-btn(href="#contact") Get Started
 
         // About Section
         section#about.about
@@ -78,12 +78,6 @@ html(lang="en")
         section#gallery.gallery
             .container
                 h2 Gallery & Videos              
-                //- git init
-                //- git add .
-                //- git commit -m "Initial commit"
-                //- git branch -M main
-                //- git remote add origin https://github.com/your-username/dance-website.git
-                //- git push -u origin main
                 .gallery-grid
                     .gallery-item
                         img(src="/static/dance1.svg" alt="Contemporary Dance Performance")
@@ -134,21 +128,23 @@ html(lang="en")
                             | | 
                             a(href="#") Twitter
                     .contact-form
-                        form
+                        if sent
+                            p.form-success Thank you! Your message has been sent.
+                        form(action="/contact" method="post")
                             .form-group
                                 label(for="name") Name
-                                input#name(type="text" placeholder="Your Name" required)
+                                input#name(type="text" name="name" placeholder="Your Name" required)
                             .form-group
                                 label(for="email") Email
-                                input#email(type="email" placeholder="Your Email" required)
+                                input#email(type="email" name="email" placeholder="Your Email" required)
                             .form-group
                                 label(for="message") Message
-                                textarea#message(placeholder="Your Message" rows="5" required)
+                                textarea#message(name="message" placeholder="Your Message" rows="5" required)
                             button.submit-btn Send Message
 
         // Footer
         footer.footer
             .container
                 p &copy; 2026 DanceFlow. All rights reserved.
-                | | Made with ❤️ by a passionate dancer     
+                | Made with ❤️ by a passionate dancer     
 
